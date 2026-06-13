@@ -1,0 +1,37 @@
+{
+  "name": "docker-kubernetes-mcp",
+  "version": "1.0.0",
+  "description": "Docker and Kubernetes MCP server for container orchestration",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "mcp",
+    "docker",
+    "kubernetes",
+    "container",
+    "orchestration",
+    "model-context-protocol"
+  ],
+  "author": "TrivCodez",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "eslint": "^8.56.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.2.0"
+  },
+  "dependencies": {
+    "@docker/sdk": "^1.0.0",
+    "@kubernetes/client-node": "^0.20.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.0"
+  }
+}
